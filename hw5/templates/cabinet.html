@@ -1,0 +1,30 @@
+<html>
+<head>
+ <title>Cabinet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+ <h1>This is a cabinet page</h1>
+	<div class="flex-container">
+	  <div class="flex-item"><h2>Hello, user!</h2></div>
+	  <div class="flex-item"><img src="/static/11.jpg"></div>
+	</div>
+	
+<h2>Do you want to upload anything? You can do it here!</h2>
+
+<form method="post" action="/cabinet" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input type="file" name="file" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Submit">
+	</p>
+	
+<h3>After you pushed the "Submit" button the image was uploaded to the folder "/static/upload/". Wow!</h3>
+</form>
+
+</body>
+</html>
